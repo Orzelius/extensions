@@ -1,0 +1,10 @@
+name: my-extension
+container:
+  entrypoint: ./my-extension
+  args:
+    - --msg
+    - Talos Linux Extension Service
+depends:
+  - network:
+    - addresses
+restart: always
